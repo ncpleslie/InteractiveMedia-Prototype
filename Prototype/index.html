@@ -11,7 +11,7 @@
 </head>
 <body>
 <section class="banner embed-responsive-item">
-  <video class="hidden-sm-down sizer" autoplay controls style="margin-top: -100px">
+  <video id="splashpage-video" class="hidden-sm-down sizer" autoplay controls style="margin-top: -100px">
     <source src="./video/splashpage.webm" type="video/webm">
   </video>
   <a class="btn btn-secondary btn-lg float-right" href="homepage.html" role="button">SKIP</a> </section>
@@ -19,9 +19,10 @@
 <script src="popper.min.js"></script> 
 <script src="bootstrap-4.0.0.js"></script> 
 <script> 
-        window.onload = setTimeout(function(){
-            window.location.href = "homepage.html"
-         }, 20000)
+	const videoObj = document.getElementById('splashpage-video')
+	videoObj.onended = function(e) {
+  		window.location.href="./homepage.html"
+	}
       </script>
 </body>
 </html>
