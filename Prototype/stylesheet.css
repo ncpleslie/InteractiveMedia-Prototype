@@ -23,3 +23,24 @@ a.custom-card,
 a.custom-card:hover {
   color: inherit;
 }
+
+video{
+  position:relative;
+  display:block;
+  width:100%; 
+}
+.float-right{
+  position:absolute;
+}
+section a{
+  top:80%;
+  right:50%;
+}
+
+.navbar-brand {
+	opacity: 0.5;
+}
+ 
+.navbar-brand:hover {
+	opacity: 1.0;
+}

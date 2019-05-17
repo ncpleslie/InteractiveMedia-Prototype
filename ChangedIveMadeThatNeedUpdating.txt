@@ -1,0 +1,3 @@
+Updated Navigation chart
+	- Added About Page
+	- Added Help Page
