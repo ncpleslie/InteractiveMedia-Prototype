@@ -6,30 +6,52 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fishing Drones - PROTOTYPE</title>
 <!-- Bootstrap -->
-<link href="bootstrap-4.0.0.css" rel="stylesheet">
-<link href="stylesheet.css" rel="stylesheet">
 <!-- Font Awesome -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 <!-- Bootstrap core CSS -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
 <!-- Material Design Bootstrap -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.0/css/mdb.min.css" rel="stylesheet">
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.1/js/mdb.min.js"></script>
+<link href="stylesheet.css" rel="stylesheet">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2"> <a class="navbar-brand" href="homepage.html">Drones</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
-  </div>
-  <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item"> <a class="nav-link" href="#">Consumer Drones</a> </li>
-      <li class="nav-item"> <a class="nav-link" href="professional.html">Professional Drones</a> </li>
-      <li class="nav-item active"> <a class="nav-link" href="other.html">Other Drones</a> </li>
-      <li class="nav-item"> <a class="nav-link" href="rules-regs.html">Rules and Regulations</a> </li>
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
+  
+  <!-- Navbar brand --> 
+  <a class="navbar-brand" href="homepage.html"> <img src="./images/drones-navbar.gif" alt="Drones Homepage" style="height: 70%; width: 60%;"> </a> 
+  
+  <!-- Collapse button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+    aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  
+  <!-- Collapsible content -->
+  <div class="collapse navbar-collapse" id="basicExampleNav"> 
+    
+    <!-- Links -->
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"> <a class="nav-link" href="consumer.html"><img src="./ui/consumer-button.png"></a> </li>
+      <li class="nav-item"> <a class="nav-link" href="professional.html"><img src="./ui/professional-button.png"></a> </li>
+      <li class="nav-item"> <a class="nav-link" href="other.html"><img src="./ui/other-button.png"></a> </li>
+      <li class="nav-item"> <a class="nav-link" href="rules-regs.html"><img src="./ui/rules-regs-button.png"></a> </li>
+      <li class="nav-item"> <a class="nav-link" href="about.html"><img src="./ui/about-button.png"></a> </li>
+      <li class="nav-item"> <a class="nav-link" href="help.html"><img src="./ui/help-button.png"></a> </li>
     </ul>
+    <!-- Links --> 
+    
   </div>
+  <!-- Collapsible content --> 
+  
 </nav>
+<!--/.Navbar--> 
 <!-- Jumbotron -->
 <div class="jumbotron jumbotron-fluid" style="background: url(https://via.placeholder.com/1920x1080?text=CoverPhoto-Placeholder) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 20rem; ">
   <div class="container">
@@ -77,7 +99,8 @@
         <!-- Links -->
         <h5 class="text-uppercase">Additional Information</h5>
         <ul class="list-unstyled">
-          <li> <a href="#!">About Us</a> </li>
+          <li> <a href="about.html">About</a> </li>
+          <li> <a href="help.html">Help</a> </li>
         </ul>
       </div>
       <!-- Grid column --> 
@@ -89,14 +112,6 @@
   <div class="footer-copyright text-center py-3">© 2019 Copyright: Nick Leslie </div>
   <!-- Copyright --> 
 </footer>
-<!-- Footer --> 
-<!-- JQuery --> 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> 
-<!-- Bootstrap tooltips --> 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script> 
-<!-- Bootstrap core JavaScript --> 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script> 
-<!-- MDB core JavaScript --> 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.0/js/mdb.min.js"></script>
+<!-- Footer -->
 </body>
 </html>
