@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+@font-face {
+    font-family: Adamcg;
+    src: url("fonts/adamcg_pro.otf") format("opentype");
+}
+
 .img .btn {
   position: absolute;
   top: 90%;
