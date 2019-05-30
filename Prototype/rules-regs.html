@@ -38,12 +38,12 @@
     
     <!-- Links -->
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item"> <a class="nav-link" href="consumer.html"><img src="./ui/consumer-button.png"></a> </li>
-      <li class="nav-item"> <a class="nav-link" href="professional.html"><img src="./ui/professional-button.png"></a> </li>
-      <li class="nav-item"> <a class="nav-link" href="other.html"><img src="./ui/other-button.png"></a> </li>
-      <li class="nav-item active"> <a class="nav-link" href="rules-regs.html"><img src="./ui/rules-regs-button.png"></a> </li>
-      <li class="nav-item"> <a class="nav-link" href="about.html"><img src="./ui/about-button.png"></a> </li>
-      <li class="nav-item"> <a class="nav-link" href="help.html"><img src="./ui/help-button.png"></a> </li>
+      <li class="nav-item"> <a class="nav-link" href="consumer.html"><img src="./ui/consumer-button.png" alt="Consumer Drones"></a> </li>
+      <li class="nav-item"> <a class="nav-link" href="professional.html"><img src="./ui/professional-button.png" alt="Professional Drones"></a> </li>
+      <li class="nav-item"> <a class="nav-link" href="other.html"><img src="./ui/other-button.png" alt="Other Drones"></a> </li>
+      <li class="nav-item active"> <a class="nav-link" href="rules-regs.html"><img src="./ui/rules-regs-button.png" alt="Rules and regulations"></a> </li>
+      <li class="nav-item"> <a class="nav-link" href="about.html"><img src="./ui/about-button.png" alt="About Us"></a> </li>
+      <li class="nav-item"> <a class="nav-link" href="help.html"><img src="./ui/help-button.png" alt="Need Help?"></a> </li>
     </ul>
     <!-- Links --> 
     
@@ -53,17 +53,29 @@
 </nav>
 <!--/.Navbar--> 
 <!-- Jumbotron -->
-<div class="jumbotron jumbotron-fluid" style="background: url(https://via.placeholder.com/1920x1080?text=CoverPhoto-Placeholder) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; height: 20rem; ">
+<div class="jumbotron jumbotron-fluid" style="background: url(./images/banner-alt2.png) center center / cover no-repeat;">
   <div class="container">
-    <h1 class="display-1" style="font-weight: 300; font-size: 8rem; margin-top: -5%; ">Rules</h1>
-    <h1 class="display-1" style="font-weight: 300; font-size: 8rem;">And Regulations</h1>
+    <h1 class="display-1" style="font-size: 8rem; margin-top: -6.5%; font-family: Adamcg; color: white;">Rules and</h1>
+    <h1 class="display-1" style="font-size: 8rem; font-family: Adamcg; color: white;">Regulations</h1>
   </div>
 </div>
 <!-- End Jumbotron -->
 <div class="container" style="margin-top: 4rem; margin-bottom: 4rem;">
   <div class="card">
     <div class="row no-gutters">
-      <div class="col-auto"> <img src="https://via.placeholder.com/555x371?text=ConsumerDrones-Placeholder" style="width: 100%;" class="img-fluid" alt=""> </div>
+      <div class="col-auto"> 
+        <!-- Trigger the Modal --> 
+        <img id="myImg" src="./images/Fly-the-right-way-1.png" alt="Rules and Regulations from CAA website" style="width:100%;max-width:555px"> 
+        <!-- The Modal -->
+        <div id="myModal" class="modal"> 
+          <!-- The Close Button --> 
+          <span class="close">&times;</span> 
+          <!-- Modal Content (The Image) --> 
+          <img class="modal-content" id="img01"> 
+          <!-- Modal Caption (Image Text) -->
+          <div id="caption"></div>
+        </div>
+      </div>
       <div class="col">
         <div class="card-block px-2" style="margin: 4rem;">
           <h1 class="card-title">Rules and Regulations</h1>
@@ -132,4 +144,27 @@
 </footer>
 <!-- Footer -->
 </body>
+<script>
+		// https://www.w3schools.com/howto/howto_css_modal_images.asp
+	// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+	</script>
 </html>
